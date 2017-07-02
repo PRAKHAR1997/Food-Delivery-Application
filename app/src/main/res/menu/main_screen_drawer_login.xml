@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_dine"
+            android:icon="@drawable/dining"
+            android:title="A La Carte" />
+
+        <item
+            android:id="@+id/order"
+            android:title="Order"
+            android:icon="@drawable/ic_history_black_24dp"
+            />
+        <item
+            android:id="@+id/favourite"
+            android:icon="@drawable/ic_favorite_border_black_menu_24dp"
+            android:title="Favourite" />
+        <item
+            android:title="Shopping Cart"
+            android:id="@+id/cartnav"
+            android:icon="@drawable/ic_shopping_cart_black_menu_24dp"
+            />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="About Us" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_grade_black_24dp"
+                android:title="Rate Us" />
+
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/ic_call_black_24dp"
+                android:title="Call Us" />
+        </menu>
+    </item>
+
+</menu>

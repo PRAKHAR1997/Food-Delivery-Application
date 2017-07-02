@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "223381916943",
+    "firebase_url": "https://tadqa-24f07.firebaseio.com",
+    "project_id": "tadqa-24f07",
+    "storage_bucket": "tadqa-24f07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223381916943:android:d0fb6301181bf073",
+        "android_client_info": {
+          "package_name": "com.project.gaurs.tadqa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223381916943-2ar0jburhpo6dflar6n981hr2cl2v3gc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.gaurs.tadqa",
+            "certificate_hash": "fb9687ab37bcaceb2ec463c9b9ea7d532f4b5b26"
+          }
+        },
+        {
+          "client_id": "223381916943-4lnnk55s19rurfl8uibpd3pe25lpcqu4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgfnJSIZ0MUXYWKT4sjfV0KbK3NjacJUg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223381916943-4lnnk55s19rurfl8uibpd3pe25lpcqu4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

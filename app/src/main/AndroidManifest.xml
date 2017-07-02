@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.gaurs.tadqa">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo1"
+        android:label="Food Delivery"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,android:icon">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="216477612202792" />
+        <activity android:name=".Activities.OpenScreen"/>
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity
+            android:name=".Activities.MainScreen"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name=".Activities.ForgotPasswordActivity" />
+        <activity
+            android:name=".Activities.AfterMain"
+            android:label="Menu"
+            android:parentActivityName=".Activities.MainScreen"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.gaurs.tadqa.Activities.MainScreen" />
+        </activity>
+        <activity
+            android:name=".Activities.Cart_Favorite"
+            android:parentActivityName=".Activities.AfterMain">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.gaurs.tadqa.Activities.AfterMain" />
+        </activity>
+        <activity
+            android:name=".Activities.Checkout"
+            android:label="@string/title_activity_checkout"
+            android:parentActivityName=".Activities.Cart_Favorite"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.project.gaurs.tadqa.Activities.Cart_Favorite" />
+        </activity>
+        <activity android:name=".Activities.ThankYouPage">
+            <intent-filter>
+                <action android:name="applicationB.intent.action.Launch" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Food Delivery"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

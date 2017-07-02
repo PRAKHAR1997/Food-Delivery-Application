@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.project.gaurs.tadqa.Fragment.Confirmation"
+    android:background="@android:color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shippingback">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_above="@+id/textviewamount"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textviewamount"
+            android:layout_alignBottom="@+id/textviewamount"
+            android:layout_alignStart="@+id/recyclerView"
+            android:layout_marginRight="30dp"
+            android:padding="5dp"
+            android:text="TOTAL AMOUNT"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout5"
+            android:layout_alignEnd="@+id/recyclerView"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:text="Confirm &amp; pay"
+                android:background="#008800"
+                android:textColor="@android:color/white"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/recyclerView"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:text="YOUR ORDER"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView20"
+            android:layout_alignTop="@+id/button13"
+            android:padding="5dp"
+            android:text="SHIPPING TO:"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button13"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="Edit"
+            android:textColor="#008800"
+            android:textSize="12sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/textviewamount"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/shippingname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView22"
+            android:layout_below="@+id/textView22"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/shippingaddress"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/shippingname"
+            android:layout_below="@+id/shippingname"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phonenumberconfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/shippingaddress"
+            android:layout_below="@+id/shippingaddress"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</FrameLayout>

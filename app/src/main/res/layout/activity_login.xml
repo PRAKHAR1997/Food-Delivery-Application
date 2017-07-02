@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/use"
+        android:isScrollContainer="true"
+        tools:context="com.project.gaurs.tadqa.Login">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/image"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" />
+
+        <Button
+            android:id="@+id/forgotpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:text="Forgot your Password?"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textInputLayout"
+            android:layout_alignEnd="@+id/textInputLayout"
+            android:layout_alignStart="@+id/forgotpass"
+            android:textColorHint="@android:color/white"
+            android:theme="@style/TextLabel">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/password"
+                android:layout_alignEnd="@+id/button6"
+                android:layout_alignStart="@+id/password"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_login"
+            android:layout_alignEnd="@+id/button6"
+            android:layout_alignStart="@+id/forgotpass"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@android:color/white"
+            android:theme="@style/TextLabel"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@android:color/white">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button_login"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="end"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:background="@drawable/border"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:layout_above="@+id/imageView3"
+            android:layout_alignStart="@+id/loginButton"
+            android:layout_marginBottom="33dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="New here? Sign Up"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            android:layout_marginEnd="38dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="318dp"
+            android:layout_height="58dp"
+            android:alpha="0.5"
+            app:srcCompat="@drawable/imag"
+            android:layout_marginBottom="36dp"
+            android:layout_above="@+id/loginButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

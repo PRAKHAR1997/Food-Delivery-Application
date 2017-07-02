@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    tools:context="com.project.gaurs.tadqa.MainNavActivity.RateFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="We want your feedback. Please rate us based on your experience with Tadqa!"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:rating="5"
+            android:theme="@style/RatingBar" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ratingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="Enter your feedback"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/rate"
+            android:cursorVisible="true"
+            android:textColor="@android:color/white"
+            android:elevation="5dp"
+            android:ems="10"
+            android:gravity="top"
+            android:textColorHint="@android:color/white"
+            android:inputType="textMultiLine"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText5"
+            android:layout_below="@+id/editText5"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/rate"
+            android:ems="10"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="#008800"
+            android:text="SEND"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</FrameLayout>

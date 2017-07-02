@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.project.gaurs.tadqa.Activities.AfterMain">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Close"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:title=""
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_cart"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title=""
+        android:actionLayout="@layout/badge_layout"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagecart"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="3dp"
+                android:alpha="0.9"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/nameofproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/priceofproduct"
+                android:layout_alignTop="@+id/imagecart"
+                android:layout_marginTop="14dp"
+                android:fontFamily="cursive"
+                android:text="Name"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceofproduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="14dp"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@+id/imagecart"
+                android:text="Price" />
+
+            <ImageButton
+                android:id="@+id/add1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/quantity"
+                android:layout_toEndOf="@+id/quantity"
+                android:background="@android:color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_add_circle_outline_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/sub1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/imagecart"
+                android:layout_alignStart="@+id/priceofproduct"
+                android:layout_marginBottom="14dp"
+                android:background="@android:color/white"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_remove_circle_outline_black_24dp" />
+
+            <Button
+                android:id="@+id/delete_from_cart"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@android:color/white"
+                android:textColor="#BB0000"
+                android:text="Remove"
+                android:layout_alignBaseline="@+id/quantity"
+                android:layout_alignBottom="@+id/quantity"
+                android:layout_toEndOf="@+id/add1"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/sub1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/sub1"
+                android:gravity="center"
+                android:text="1"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

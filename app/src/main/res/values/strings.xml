@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tadqa</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="aboutus1">Quality food is our resolve, committed service is our culture and satisfied customer is our objective!</string>
+    <string name="aboutus2">Our Services are fast emerging as a prominent player in corporate and retail food service, contract catering and allied industries. tadqa is best placed to serve customers with wide variety of offerings. Our commitment to customer satisfaction, quality food and value Product makes us stand out from the crowd, helping us carve new milestones in the food service industry.</string>
+    <string name="aboutus3">Backed by Share India group, a leading name in financial service industry, our diversified business interests include in-house-developed brands, integrated contract catering and Support Services. To better cater to our customers, we have hired chefs with over 15 years of experience and expertise in entire spectrum of Indian cuisine.</string>
+    <string name="aboutus4">Our Values:\n
+        Food service is not just business but our passion.
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgotpass">We just need your registered Email address to send you password reset instructions.</string>
+    <string name="emptycart"><b>Your Cart is empty.</b>\n Your Cart lives to serve. Give it purpose fill it with Food. \n\n Continue Ordering or visit your Favourite Section.</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="emptyfav">What\'s my favourite food? Once you order out..\n -ABIGAIL BRESLIN. </string>
+
+</resources>

@@ -1,0 +1,207 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Shipping">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/confirma">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/relativeLayout4"
+            android:layout_alignParentTop="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/firstnametext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/lastnametext"
+                android:layout_below="@+id/textView24"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:theme="@style/TextLabel"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/firstnameedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/firstnameedit"
+                    android:layout_alignBottom="@+id/firstnameedit"
+                    android:layout_alignStart="@+id/firstnametext"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="NAME"
+                    android:inputType="textPersonName"
+                    android:text="prakhar"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phonenumbertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/firstnametext"
+                android:layout_below="@+id/firstnametext"
+                android:layout_marginEnd="10dp"
+                android:theme="@style/TextLabel"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/phonenumberedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/lastnametext"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:autoLink="phone"
+
+                    android:ems="10"
+                    android:hint="PHONE NUMBER"
+                    android:inputType="phone"
+                    android:maxEms="10"
+                    android:maxLength="10"
+                    android:text="8859691423"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/addresstext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phonenumbertext"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:theme="@style/TextLabel"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/addressedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/address"
+                    android:layout_alignBottom="@+id/address"
+                    android:layout_alignStart="@+id/phonenumbertext"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="ADDRESS"
+                    android:inputType="textPostalAddress"
+                    android:text="modinagar"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ziptext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/addresstext"
+                android:layout_below="@+id/addresstext"
+                android:layout_marginEnd="10dp"
+                android:theme="@style/TextLabel"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/zipedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/pincode"
+                    android:layout_alignBottom="@+id/pincode"
+                    android:layout_alignStart="@+id/addresstext"
+                    android:layout_marginRight="20dp"
+                    android:ems="6"
+                    android:hint="ZIP CODE"
+                    android:inputType="number"
+                    android:maxEms="6"
+                    android:maxLength="6"
+                    android:text="201204"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/citytext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ziptext"
+                android:layout_below="@+id/ziptext"
+                android:layout_marginEnd="10dp"
+                android:theme="@style/TextLabel"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/cityedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ziptext"
+                    android:layout_below="@+id/ziptext"
+                    android:layout_marginRight="20dp"
+                    android:ems="10"
+                    android:hint="CITY"
+                    android:inputType="textPersonName"
+                    android:text="ghaziabad"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/firstnametext"
+                android:fontFamily="cursive"
+                android:padding="10dp"
+                android:text="Shipping Address"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+
+            <Button
+                android:id="@+id/movetopayment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="continue to confirmation"
+                android:background="#008800"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FavouriteFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler10"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emptyfav"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/recycler10"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+</RelativeLayout>
+
+</FrameLayout>
